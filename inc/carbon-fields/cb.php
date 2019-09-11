@@ -10,13 +10,29 @@ use Carbon_Fields\Field;
 add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
 	$basic_options_container = Container::make( 'theme_options', __( 'Basic Options' ) )
-	->add_tab( __( 'Contacts' ), array(
+	->add_tab( __( 'Address' ), array(
 		Field::make( 'text', 'crb_address_ro', __( 'address ro' ) )
 			 ->set_width( 30 ),
 		Field::make( 'text', 'crb_address_ru', __( 'address ru' ) )
 			 ->set_width( 30 ),
 		Field::make( 'text', 'crb_address_en', __( 'address en' ) )
 			 ->set_width( 30 ),
+	) )
+	->add_tab( __( 'Phones' ), array(
+		Field::make( 'text', 'crb_phone_1', __( 'crb_phone_1' ) )
+		     ->set_width( 30 ),
+		Field::make( 'text', 'crb_phone_2', __( 'crb_phone_2' ) )
+		     ->set_width( 30 ),
+		Field::make( 'text', 'crb_phone_3', __( 'crb_phone_3' ) )
+		     ->set_width( 30 ),
+		Field::make( 'text', 'crb_phone_4', __( 'crb_phone_4' ) )
+		     ->set_width( 30 ),
+		Field::make( 'text', 'crb_phone_5', __( 'crb_phone_5' ) )
+		     ->set_width( 30 ),
+	) )
+	->add_tab( __( 'Email' ), array(
+		Field::make( 'text', 'crb_mail', __( 'crb_mail' ) )
+		     ->set_width( 30 ),
 	) );
 	
 	// Add second options page under 'Basic Options'

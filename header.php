@@ -13,18 +13,30 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php
+    $mail = carbon_get_theme_option('crb_mail');
+    $phone_1 = carbon_get_theme_option('crb_phone_1');
+    $phone_2 = carbon_get_theme_option('crb_phone_2');
+    $phone_3 = carbon_get_theme_option('crb_phone_3');
+    $phone_clear_1 = clear_phone($phone_1);
+    $phone_clear_2 = clear_phone($phone_2);
+    $phone_clear_3 = clear_phone($phone_3);
+?>
 <div class="site-container">
     <div class="header-top-bar-container clearfix">
         <div class="header-top-bar">
             <ul class="contact-details clearfix">
                 <li class="template-phone">
-                    (520) 577 2710
+                    <a href="tel:<?php echo $phone_clear_1; ?>"><?php echo $phone_1; ?></a>
+                </li>
+                <li class="template-phone">
+                    <a href="tel:<?php echo $phone_clear_2; ?>"><?php echo $phone_2; ?></a>
+                </li>
+                <li class="template-phone">
+                    <a href="tel:<?php echo $phone_clear_3; ?>"><?php echo $phone_3; ?></a>
                 </li>
                 <li class="template-mail">
-                    <a href="mailto:carservice@mail.com">carservice@mail.com</a>
-                </li>
-                <li class="template-clock">
-                    Mon - Fri: 7:30am - 5:30pm
+                    <a href="mailto:<?php echo $mail; ?>"><?php echo $mail; ?></a>
                 </li>
             </ul>
             <div class="search-container">
