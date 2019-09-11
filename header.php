@@ -21,6 +21,10 @@
     $phone_clear_1 = clear_phone($phone_1);
     $phone_clear_2 = clear_phone($phone_2);
     $phone_clear_3 = clear_phone($phone_3);
+
+    $facebook = carbon_get_theme_option('crb_facebook');
+    $twitter = carbon_get_theme_option('crb_twitter');
+    $pinterest = carbon_get_theme_option('crb_pinterest');
 ?>
 <div class="site-container">
     <div class="header-top-bar-container clearfix">
@@ -51,13 +55,13 @@
             </div>
             <ul class="social-icons">
                 <li>
-                    <a target="_blank" href="http://facebook.com/QuanticaLabs" class="social-facebook"></a>
+                    <a target="_blank" href="<?php echo $facebook; ?>" class="social-facebook"></a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://twitter.com/QuanticaLabs" class="social-twitter"></a>
+                    <a target="_blank" href="<?php echo $twitter; ?>" class="social-twitter"></a>
                 </li>
                 <li>
-                    <a href="https://pinterest.com/quanticalabs/" class="social-pinterest"></a>
+                    <a href="<?php echo $pinterest; ?>" class="social-pinterest"></a>
                 </li>
             </ul>
         </div>
@@ -68,7 +72,7 @@
         <div class="vertical-align-table column-1-1">
             <div class="header clearfix">
                 <div class="logo vertical-align-cell">
-                    <h1><a href="home">CARSERVICE</a></h1>
+                    <?php the_custom_logo(); ?>
                 </div>
                 <a href="#" class="mobile-menu-switch vertical-align-cell">
                     <span class="line"></span>

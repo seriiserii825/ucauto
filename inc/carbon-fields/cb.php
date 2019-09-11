@@ -30,6 +30,14 @@ function crb_attach_theme_options() {
 		Field::make( 'text', 'crb_phone_5', __( 'crb_phone_5' ) )
 		     ->set_width( 30 ),
 	) )
+	->add_tab( __( 'Socials' ), array(
+		Field::make( 'text', 'crb_facebook', __( 'crb_facebook' ) )
+			 ->set_width( 30 ),
+		Field::make( 'text', 'crb_twitter', __( 'crb_twitter' ) )
+			 ->set_width( 30 ),
+		Field::make( 'text', 'crb_pinterest', __( 'crb_pinterest' ) )
+			 ->set_width( 30 ),
+	) )
 	->add_tab( __( 'Email' ), array(
 		Field::make( 'text', 'crb_mail', __( 'crb_mail' ) )
 		     ->set_width( 30 ),
