@@ -10,6 +10,7 @@ require_once __DIR__.'/func.php';
 require_once __DIR__.'/inc/bs-styles.php';
 require_once __DIR__.'/inc/bs-widgets.php';
 require_once __DIR__.'/inc/bs-setup-theme.php';
+require_once __DIR__.'/inc/classes/MainMenuWalker.php';
 
 
 function bs_ucauto_content_width() {

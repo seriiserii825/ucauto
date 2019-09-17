@@ -17,7 +17,7 @@ if ( ! function_exists( 'bs_ucauto_setup' ) ) :
 
 // This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'bs-ucauto' ),
+			'menu-top' => esc_html__( 'Menu header', 'bs-ucauto' ),
 		) );
 		
 		add_theme_support( 'html5', array(
