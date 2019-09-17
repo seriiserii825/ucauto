@@ -47,6 +47,25 @@ function crb_attach_theme_options() {
 	Container::make( 'theme_options', 'Blocks' )
 	         ->set_page_parent( $basic_options_container )// reference to a top level container
 	         ->add_tab( __( 'Our offers' ), array(
+			Field::make( 'text', 'title_ro', __( 'title_ro' ) )
+			     ->set_width( 30 ),
+			Field::make( 'text', 'title_ru', __( 'title_ru' ) )
+			     ->set_width( 30 ),
+			Field::make( 'text', 'title_en', __( 'title_en' ) )
+			     ->set_width( 30 ),
+			
+			Field::make( 'text', 'after_title_ro', __( 'after_title_ro' ) )
+			     ->set_width( 30 ),
+			Field::make( 'text', 'after_title_ru', __( 'after_title_ru' ) )
+			     ->set_width( 30 ),
+			Field::make( 'text', 'after_title_en', __( 'after_title_en' ) )
+			     ->set_width( 30 ),
+			Field::make( 'complex', 'crb_main_banner', __( 'Main banner slider' ) )
+			     ->add_fields( array(
+				     Field::make( 'image', 'crb_image', __( 'image' ) )
+				          ->set_value_type( 'url' )
+			     ) )
+			     ->set_layout( 'tabbed-horizontal' ),
 			Field::make( 'complex', 'crb_slider', __( 'Slider' ) )
 			     ->add_fields( array(
 				     Field::make( 'text', 'crb_our_offers_title_ro', __( 'crb_our_offers_title_ro' ) )
@@ -105,12 +124,26 @@ function crb_attach_theme_options() {
 			                   ->set_width( 30 ),
 			
 			
-			
 			              Field::make( 'textarea', 'crb_svg_image', __( 'crb_svg_image' ) ),
 			              Field::make( 'image', 'crb_img_real', __( 'crb_img_real' ) )
 			                   ->set_value_type( 'url' ),
 		              ) )
 		              ->set_layout( 'tabbed-horizontal' )
+	         ) )
+	         ->add_tab( __( 'Our services' ), array(
+		         Field::make( 'text', 'crb_our_services_title_ro', __( 'crb_our_services_title_ro' ) )
+		              ->set_width( 30 ),
+		         Field::make( 'text', 'crb_our_services_title_ru', __( 'crb_our_services_title_ru' ) )
+		              ->set_width( 30 ),
+		         Field::make( 'text', 'crb_our_services_title_en', __( 'crb_our_services_title_en' ) )
+		              ->set_width( 30 ),
+		
+		         Field::make( 'text', 'crb_our_services_btn_ro', __( 'crb_our_services_btn_ro' ) )
+		              ->set_width( 30 ),
+		         Field::make( 'text', 'crb_our_services_btn_ru', __( 'crb_our_services_btn_ru' ) )
+		              ->set_width( 30 ),
+		         Field::make( 'text', 'crb_our_services_btn_en', __( 'crb_our_services_btn_en' ) )
+		              ->set_width( 30 ),
 	         ) );
 	
 }

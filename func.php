@@ -2,9 +2,9 @@
 
 if (!defined('ABSPATH')) exit;
 
-function getThePostThumbSrc(){
+function getThePostThumbSrc($width, $height){
 	$id = get_the_ID();
-	return kama_thumb_src('w=1905 &h=940 &post_id='.$id.'');
+	return kama_thumb_src('w='.$width.' &h='.$height.' &post_id='.$id.'');
 }
 
 function clear_phone($phone)

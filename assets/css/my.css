@@ -1398,4 +1398,29 @@ header {
 .category .image-desc img {
   width: 320px;
 }
-
+.home-contact-form h1 {
+  max-width: 450px;
+}
+.section-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.join-us__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.page-intro-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  z-index: 2;
+}
+.page-title {
+  position: relative;
+  z-index: 3;
+}

@@ -5,6 +5,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 require_once __DIR__.'/inc/carbon-fields/cb.php';
+require_once __DIR__.'/inc/carbon-fields/cb-page.php';
+require_once __DIR__.'/inc/carbon-fields/cb-post-term.php';
 
 require_once __DIR__.'/func.php';
 require_once __DIR__.'/inc/bs-styles.php';
