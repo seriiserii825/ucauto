@@ -607,4 +607,16 @@
 		});
 
 	}
+
+	let categorySliderToggleClass = function () {
+		$('.category-wraper .swiper-slide:first-child svg').addClass('active');
+		$('.category-wraper .swiper-slide svg').on('click', function () {
+			if(!$(this).hasClass('active')){
+				$('.category-wraper .swiper-slide svg').removeClass('active');
+				$(this).addClass('active');
+			}
+		});
+
+	}
+	categorySliderToggleClass();
 })(jQuery);

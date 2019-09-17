@@ -1374,55 +1374,28 @@ header {
 .swiper-container {
   position: relative;
 }
-@media screen and (max-width: 378px) {
-  .logo-block {
-    display: block;
-  }
+.our-offers-block {
+  position: relative;
+  padding-left: 50px;
+}
+.our-offers-block svg {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 40px;
+  fill: white;
+}
+.category-wraper .swiper-slide svg {
+  fill: #000;
+  width: 100px;
+	transition: all .4s ease;
 }
 
-@media screen and (max-width: 786px) {
-	header {
-    height: auto;
-  }
-  .logo-block {
-    flex-direction: row;
-    align-items: flex-end;
-  }
-  .languages {
-    margin-left: 10px;
-  }
-	.logo-wrapper {
-    width: auto;
-  }
+.category-wraper .swiper-slide svg.active,
+.category-wraper .swiper-slide svg:hover {
+  fill: #2d5ba9;
+}
+.category .image-desc img {
+  width: 320px;
 }
 
-.navigation nav.active{
-  display: block;
-}
-@media screen and (max-width: 992px) {
-  .navigation nav{
-    display: none;
-	}
-  .navigation nav ul a {
-		padding: 10px;
-    display: block;
-		color: white;
-    border-bottom: 1px solid #253f7e;
-	}
-  .navigation nav > ul{
-    display: block;
-	}
-  .navigation nav > ul li.menu-item-has-children > a{
-    background: #426db5;
-	}
-  .navigation nav > ul > li > a:visited, .navigation nav > ul > li > a:active {
-    color: white;
-  }
-  .navigation nav .sub-menu {
-    position: static;
-    width: auto;
-  }
-  .navigation nav .sub-menu li a {
-    padding: 10px;
-	}
-}

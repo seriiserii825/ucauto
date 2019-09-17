@@ -1,103 +1,184 @@
-<!--<div class="row dark-gray footer-row full-width padding-top-30 padding-bottom-50">-->
-<!--    <div class="row padding-bottom-30">-->
-<!--        <div class="column column-1-3">-->
-<!--            <ul class="contact-details-list">-->
-<!--                <li class="sl-small-location-map">-->
-<!--                    <p>Tucson, AZ 80210:<br>-->
-<!--                        501 Archwood Lane</p>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="column column-1-3">-->
-<!--            <ul class="contact-details-list">-->
-<!--                <li class="sl-small-phone-circle">-->
-<!--                    <p>Feel Free to Call Us Now<br>-->
-<!--                        (520) 577 2710</p>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="column column-1-3">-->
-<!--            <ul class="contact-details-list">-->
-<!--                <li class="sl-small-truck-tow">-->
-<!--                    <p>24/7 Roadside Assistance<br>-->
-<!--                        (520) 577 2725</p>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="row row-4-4 top-border page-padding-top">-->
-<!--        <div class="column column-1-4">-->
-<!--            <h6 class="box-header">ABOUT US</h6>-->
-<!--            <ul class="list simple margin-top-20">-->
-<!--                <li>Tucson, Arizona 80210</li>-->
-<!--                <li>501 Archwood Lane</li>-->
-<!--                <li><span>Mobile:</span>(520) 577 2710</li>-->
-<!--                <li><span>Assistance:</span>(520) 577 2725</li>-->
-<!--                <li><span>E-mail:</span><a href="mailto:carservice@mail.com">carservice@mail.com</a></li>-->
-<!--            </ul>-->
-<!--            <ul class="social-icons gray margin-top-26">-->
-<!--                <li>-->
-<!--                    <a target="_blank" href="http://facebook.com/QuanticaLabs" class="social-facebook" title="facebook"></a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a target="_blank" href="https://twitter.com/QuanticaLabs" class="social-twitter" title="twitter"></a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a target="_blank" href="http://themeforest.net/user/QuanticaLabs/portfolio?ref=QuanticaLabs" class="social-linkedin" title="linkedin"></a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a href="https://pinterest.com/quanticalabs/" class="social-pinterest" title="pinterest"></a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="column column-1-4">-->
-<!--            <h6 class="box-header">OUR SERVICES</h6>-->
-<!--            <ul class="list margin-top-20">-->
-<!--                <li class="template-bullet">Engine Diagnostics</li>-->
-<!--                <li class="template-bullet">Lube, Oil and Filters</li>-->
-<!--                <li class="template-bullet">Belts and Hoses</li>-->
-<!--                <li class="template-bullet">Air Conditioning</li>-->
-<!--                <li class="template-bullet">Brake Repair</li>-->
-<!--                <li class="template-bullet">Tire and Wheel Services</li>-->
-<!--                <li class="template-bullet">Other Car Services</li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="column column-1-4">-->
-<!--            <h6 class="box-header">POPULAR TAGS</h6>-->
-<!--            <ul class="taxonomies margin-top-30">-->
-<!--                <li><a href="category.html" title="BELTS">BELTS</a></li>-->
-<!--                <li><a href="category.html" title="BRAKES">BRAKES</a></li>-->
-<!--                <li><a href="category.html" title="DIAGNOSTICS">DIAGNOSTICS</a></li>-->
-<!--                <li><a href="category.html" title="ENGINE">ENGINE</a></li>-->
-<!--                <li><a href="category.html" title="FILTERS">FILTERS</a></li>-->
-<!--                <li><a href="category.html" title="HEATING">HEATING</a></li>-->
-<!--                <li><a href="category.html" title="OILS">OILS</a></li>-->
-<!--                <li><a href="category.html" title="STEERING">STEERING</a></li>-->
-<!--                <li><a href="category.html" title="SUSPENSION">SUSPENSION</a></li>-->
-<!--                <li><a href="category.html" title="TIRES">TIRES</a></li>-->
-<!--                <li><a href="category.html" title="TRANSMISSION">TRANSMISSION</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="column column-1-4">-->
-<!--            <h6 class="box-header">HOURS</h6>-->
-<!--            <ul class="list simple margin-top-20">-->
-<!--                <li><span>Monday:</span>7:30am - 5:30pm</li>-->
-<!--                <li><span>Tuesday:</span>7:30am - 5:30pm</li>-->
-<!--                <li><span>Wednesday:</span>7:30am - 5:30pm</li>-->
-<!--                <li><span>Thursday:</span>7:30am - 5:30pm</li>-->
-<!--                <li><span>Friday:</span>7:30am - 5:30pm</li>-->
-<!--                <li><span>Saturday:</span>7:30am - 3:00pm</li>-->
-<!--                <li><span>Sunday:</span>Closed</li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="row align-center padding-top-bottom-30">-->
-<!--    <span class="copyright">© Copyright 2015 <a href="http://themeforest.net/item/carservice-mechanic-auto-shop-template/12332985?ref=QuanticaLabs" title="Carservice Template" target="_blank">Carservice Template</a> by <a href="http://quanticalabs.com" title="QuanticaLabs" target="_blank">QuanticaLabs</a></span>-->
-<!--</div>-->
-<!--</div>-->
-<!--<a href="#top" class="scroll-top animated-element template-arrow-up" title="Scroll to top"></a>-->
-<!--<div class="background-overlay"></div>-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="state">
+                    <h3>Looking for Driver Driving School in Another State?</h3>
+                    <div class="state-list">
+                        <ul>
+                            <li><span class="fa fa-angle-right"></span><a href="">Alabama</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Alaska</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Arizona</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Arkansas</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">California</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Colorado</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Connecticut</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Delaware</a></li>
+                        </ul>
+                    </div>
+                    <div class="state-list">
+                        <ul>
+                            <li><span class="fa fa-angle-right"></span><a href="">Florida</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Georgia</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Hawaii</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Idaho</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Illinois</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Indiana</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Iowa</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Kansas</a></li>
+                        </ul>
+                    </div>
+                    <div class="state-list">
+                        <ul>
+                            <li><span class="fa fa-angle-right"></span><a href="">Kentucky</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Louisiana</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Maine</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Maryland</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Massachusetts</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Michigan</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Minnesota</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Mississippi</a></li>
+                        </ul>
+                    </div>
+                    <div class="state-list">
+                        <ul>
+                            <li><span class="fa fa-angle-right"></span><a href="">Missouri</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Montana</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Nebraska</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Nevada</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">New Hampshire</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">New Jersey</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">New Mexico</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">New York</a></li>
+                        </ul>
+                    </div>
+                    <div class="state-list">
+                        <ul>
+                            <li><span class="fa fa-angle-right"></span><a href="">North Carolina</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">North Dakota</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Ohio</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Oklahoma</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Oregon</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Pennsylvania</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Rhode Island</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">South Carolina</a></li>
+                        </ul>
+                    </div>
+                    <div class="state-list">
+                        <ul>
+                            <li><span class="fa fa-angle-right"></span><a href="">South Dakota</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Tennessee</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Texas</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Utah</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Vermont</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Virginia</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Washington</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="">Washington DC</a></li>
+                        </ul>
+                    </div>
+                    <div class="state-map">
+                        <div class="choose-state">
+                            <div class="drop">
+                                <b>Choose Your State</b>
+                                <a href="#" class="drop-list"><i class="fa fa-caret-down"></i></a>
+                                <span class="chose-list">
+                                                 <a href="">Choose Your State</a>
+                                                 <a href="">Alabama</a>
+                                                 <a href="">Alaska</a>
+                                                 <a href="">Arizona</a>
+                                                 <a href="">Arkansas</a>
+                                                 <a href="">California</a>
+                                            </span>
+                            </div>
+                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/state.png" alt="state">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="register">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h4>register your email for news and special offers</h4>
+                </div>
+                <div class="col-md-5">
+                    <form action="/">
+                        <input type="email" placeholder="Your Email" required>
+                        <div class="submit-button">
+                            <input type="submit" value="">
+                            <span class="fa fa-chevron-right"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-link">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="about-footer-link">
+                        <h6>About Us</h6>
+                        <ul>
+                            <li><a href="about.html">ABOUT us</a></li>
+                            <li><a href="pricing.html">pricing plans</a></li>
+                            <li><a href="joinus.html">join us</a></li>
+                            <li><a href="blog-grid.html">blog</a></li>
+                            <li><a href="contact.html">contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="useful-footer-link">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="">terms and conditions</a></li>
+                            <li><a href="">privacy policy</a></li>
+                            <li><a href="">sitemap</a></li>
+                            <li><a href="">Offers</a></li>
+                            <li><a href="">testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="adress-footer-link">
+                        <h6>Contact</h6>
+                        <ul class="adress-data">
+                            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_icon_1.png"
+                                     alt="icon"><a href="tel:">012 345 6789</a></li>
+                            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_icon_2.png"
+                                     alt="icon"><a href="mailto:" class="footer-mail">info@driver.driving.com</a></li>
+                            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_icon_3.png"
+                                     alt="icon">23S CARLTON PLACE, SOUTHAMps D238 2TN
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png"
+                                                  alt="logotype"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <span>Copyright 2015 &copy; Driver | All Rights Reserved</span>
+                        <div class="footer-follow">
+                            <a href="" class="fa fa-facebook"></a>
+                            <a href="" class="fa fa-twitter"></a>
+                            <a href="" class="fa fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <?php wp_footer(); ?>
 </body>
 </html>
