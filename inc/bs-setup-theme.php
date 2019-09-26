@@ -17,7 +17,8 @@ if ( ! function_exists( 'bs_ucauto_setup' ) ) :
 
 // This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-top' => esc_html__( 'Menu header', 'bs-ucauto' ),
+			'menu-top' => 'Menu header',
+			'menu-cities' => 'Cities menu',
 		) );
 		
 		add_theme_support( 'html5', array(

@@ -1,3 +1,5 @@
+// import {markAsInvalid} from "../../vendor/htmlburger/carbon-fields/packages/core/store/actions";
+
 (function (cash) {
 	"use strict";
 
@@ -617,6 +619,12 @@
 			}
 		});
 
-	}
+	};
 	categorySliderToggleClass();
+
+	let faIconMenuElement = function () {
+		$('#menu-cities li').append('<span class="fa fa-angle-right"></span>');
+	};
+	faIconMenuElement();
+
 })(jQuery);

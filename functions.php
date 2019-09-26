@@ -7,13 +7,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once __DIR__.'/inc/carbon-fields/cb.php';
 require_once __DIR__.'/inc/carbon-fields/cb-page.php';
 require_once __DIR__.'/inc/carbon-fields/cb-post-term.php';
+require_once __DIR__.'/inc/carbon-fields/cb-term.php';
+require_once __DIR__.'/inc/carbon-fields/cb-post-meta.php';
 
 require_once __DIR__.'/func.php';
 require_once __DIR__.'/inc/bs-styles.php';
 require_once __DIR__.'/inc/bs-widgets.php';
 require_once __DIR__.'/inc/bs-setup-theme.php';
+require_once __DIR__.'/inc/bs-post-type.php';
 require_once __DIR__.'/inc/classes/MainMenuWalker.php';
-
 
 function bs_ucauto_content_width() {
 	// This variable is intended to be overruled from themes.

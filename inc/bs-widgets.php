@@ -14,5 +14,4 @@ function bs_ucauto_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-
 add_action( 'widgets_init', 'bs_ucauto_widgets_init' );
