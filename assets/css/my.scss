@@ -2710,6 +2710,7 @@ footer {
   float: left;
   width: 100%;
   background: #f7f7f7;
+  padding-top: 30px;
   padding-bottom: 50px;
   margin-bottom: 40px;
 }
@@ -5482,9 +5483,7 @@ footer {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
 .bg-grey-wrap.join-us-grey-block {
-  padding-top: 50px;
   margin: 0px;
-  padding-bottom: 70px;
 }
 
 .join-us-block {
@@ -6548,6 +6547,9 @@ header {
       font-size: 20px;
       box-shadow: 0 5px 5px 0 rgba(0,0,0, .1);
       margin-bottom: 5px;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -6558,10 +6560,31 @@ header {
   margin-top: 30px;
   grid-gap: 10px;
 
+  @media screen and (max-width: 1200px) {
+  	grid-template-columns: repeat(5, 1fr);
+  }
+  @media screen and (max-width: 962px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media screen and (max-width: 678px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 430px) {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+  }
   &__item {
     position: relative;
     border: 1px solid #ccc;
     overflow: hidden;
+    @media screen and (max-width: 430px) {
+      margin-bottom: 20px;
+    }
 
     &::before {
       content: '';
@@ -6653,4 +6676,81 @@ table {
 }
 .widget {
   margin-bottom: 10px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  @media screen and (max-width: 1200px) {
+  	grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 700px) {
+    display: table;
+    margin: 0 auto;
+    max-width: 400px;
+    padding-top: 40px;
+    float: none;
+  }
+  &__item {
+    position: relative;
+    display: block;
+    height: 300px;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.4);
+    overflow: hidden;
+    @media screen and (max-width: 700px) {
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      .gallery__caption {
+        transition: all .2s ease;
+        bottom: 0;
+      }
+    }
+  }
+  &__caption {
+    position: absolute;
+    bottom: -200%;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: $chartreuse_yellow;
+    background: #2d5ba9b3;
+    border: 1px solid $chartreuse_yellow;
+    overflow: hidden;
+    transition: all .2s ease;
+  }
+}
+.thumb-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.thumb-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.single-content.video__gallery p {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  @media screen and (max-width: 768px) {
+  	grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+  .fluid-width-video-wrapper {
+    @media screen and (max-width: 600px) {
+      margin-bottom: 30px;
+    }
+
+  }
 }

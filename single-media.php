@@ -13,9 +13,16 @@ get_header();
 <div class="full-width main-wrapper">
     <div class="top-title">
         <div class="page-intro-bg">
+	        <?php
+	        if ( has_post_thumbnail() ) {
+		        $imageSrc = getThePostThumbSrc( '1920', '340' );
+	        } else {
+		        $imageSrc = kama_thumb_src( 'w=1920 &h=340', 235 );
+	        }
+	        ?>
             <div class="clip">
                 <div class="bg bg-bg-chrome"
-                     style="background-image:url(<?php echo getThePostThumbSrc( '1920', '340' ); ?>)"></div>
+                     style="background-image:url(<?php echo $imageSrc; ?>)"></div>
             </div>
         </div>
         <div class="page-title">

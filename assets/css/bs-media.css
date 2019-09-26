@@ -47,6 +47,7 @@
 	.navigation nav .sub-menu {
 		position: static;
 		width: auto;
+		margin-left: 0;
 	}
 	.navigation nav .sub-menu li a {
 		padding: 10px;

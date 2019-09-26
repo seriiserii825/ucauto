@@ -22,13 +22,12 @@ get_header();
 
     <div class="blog blog-post">
         <div class="container">
-            <div class="single-content">
+            <div class="single-content <?php if(is_page(285)) echo 'video__gallery'; ?>">
 				<?php if ( have_posts() ): ?>
 				<?php the_post(); ?>
 				<?php the_content(); ?>
-				
-				<?php $main_table = carbon_get_the_post_meta( 'crb_main_banner' ); ?>
-				
+	
+	            <?php $main_table = carbon_get_the_post_meta( 'crb_main_banner' ); ?>
 				<?php if ( $main_table ): ?>
                 <div class="main-table" style="overflow-x:auto;" id="js-main-table">
                     <div class="main-table__table">
@@ -47,6 +46,7 @@ get_header();
 						<?php endforeach; ?>
                     </div>
 					<?php endif; ?>
+					
                     <div class="media-gallery" id="js-media-gallery">
 						<?php $gallery = carbon_get_the_post_meta( 'crb_media_gallery' ); ?>
 						
