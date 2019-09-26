@@ -1,18 +1,21 @@
 <?php
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package bs-ucauto
+ */
+
 get_header();
+
 ?>
-    <div class="full-width main-wrapper">
+<div class="full-width main-wrapper">
     <div class="top-title">
         <div class="page-intro-bg">
-			<?php
-			if ( has_post_thumbnail() ) {
-				$imageSrc = getThePostThumbSrc( '1920', '340' );
-			} else {
-				$imageSrc = kama_thumb_src( 'w=1920 &h=340', 235 );
-			}
-			?>
             <div class="clip">
-                <div class="bg bg-bg-chrome" style="background-image:url(<?php echo $imageSrc; ?>)"></div>
+                <div class="bg bg-bg-chrome"
+                     style="background-image:url(<?php echo getThePostThumbSrc( '1920', '340' ); ?>)"></div>
             </div>
         </div>
         <div class="page-title">
@@ -26,9 +29,9 @@ get_header();
 				<?php if ( have_posts() ): ?>
 				<?php the_post(); ?>
 				<?php the_content(); ?>
-				
+
 				<?php $main_table = carbon_get_the_post_meta( 'crb_main_banner' ); ?>
-				
+
 				<?php if ( $main_table ): ?>
                 <div class="main-table" style="overflow-x:auto;" id="js-main-table">
                     <div class="main-table__table">
@@ -47,9 +50,10 @@ get_header();
 						<?php endforeach; ?>
                     </div>
 					<?php endif; ?>
+
                     <div class="media-gallery" id="js-media-gallery">
 						<?php $gallery = carbon_get_the_post_meta( 'crb_media_gallery' ); ?>
-						
+
 						<?php foreach ( $gallery as $item ): ?>
                             <div class="media-gallery__item">
                                 <h4 class="media-gallery__title"><?php echo carbon_get_theme_option( 'crb_single_resize' . get_lang() ); ?></h4>
@@ -64,5 +68,8 @@ get_header();
             </div>
         </div>
     </div>
-<?php
-get_footer();
+
+
+	<?php
+	get_footer();
+	?>

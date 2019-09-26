@@ -1,35 +1,5 @@
-/*STYLE.CSS*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/*This is main CSS file that contains custom style rules used in this template*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* Template Name: Driver.*/
-/* Version: 1.0 Initial Release*/
-/* Build Date: 13-01-2015*/
-/* Author: Unbranded.*/
-/* Website: http://moonart.net.ua/driver/
-/* Copyright: (C) 2015 */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------*/
-/* TABLE OF CONTENTS: */
-/*--------------------------------------------------------*/
-/* 01 - LAYOUT INITIALIZATION & COLOR PRESETS */
-/* 02 - HOME */
-/* 03 - ABOUT US */
-/* 04 - TEAM */
-/* 05 - BLOG */
-/* 06 - GALLERY */
-/* 07 - PAGE */
-/* 08 - JOIN US */
-/* 09 - CONTACT */
-/* 10 - TEST */
-/* 11 - PRICING */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* 01 - LAYOUT INITIALIZATION & COLOR PRESETS */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);
 /*@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900,500);*/
-
 //variables
 $azure: #2d5ba9;
 $st_tropaz: #2a6496;
@@ -731,8 +701,8 @@ nav .fa {
 
 .menu-mobile-icon {
   position: absolute;
-  right: 50px;
-  top: 50px;
+  right: 20px;
+  top: 35px;
   width: 30px;
   height: 20px;
   z-index: 50;
@@ -774,11 +744,16 @@ nav a:focus {
   color: #363636;
 }
 
-.navigation {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 500px;
+.languages {
+  @media screen and (max-width: 992px) {
+    position: relative;
+  	right: 100px;
+  }
+
+  @media screen and (max-width: 400px) {
+    right: 0;
+  }
+
 }
 
 .link {
@@ -954,11 +929,14 @@ nav a:focus {
 }
 
 @media screen and (min-width: 992px) {
-  .close-menu {
+  .navigation .fa {
     display: none;
   }
-
-  .navigation .fa {
+}
+@media screen and (max-width: 992px) {
+  .close-menu {
+    top: 40px;
+    right: 8px;
     display: none;
   }
 }
@@ -979,6 +957,16 @@ nav a:focus {
     margin-left: 10px;
   }
 }
+@media screen and (max-width: 400px) {
+  .logo-wrapper {
+    float:none;
+  }
+
+  .logo-wrapper a {
+    float: none;
+  }
+}
+
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 02 - HOME */
@@ -2618,7 +2606,7 @@ footer {
 }
 
 .page-title h3 {
-  font-size: 60px;
+  font-size: 50px;
   line-height: 1.1;
   color: $chartreuse_yellow;
   text-shadow: 0px 3px 0px rgba(28, 28, 28, 0.8);
@@ -3982,10 +3970,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .blog {
-    padding-top: 80px;
-  }
-
   .blog-list .center-info-bar h2 {
     font-size: 24px;
     line-height: 35px;
@@ -6314,9 +6298,16 @@ footer {
 }
 
 .navigation {
+  position: relative;
+  float: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  @media screen and (max-width: 400px) {
+    display: block;
+    min-height: initial;
+  }
 }
 
 .navigation ul {
@@ -6325,7 +6316,6 @@ footer {
 
 header {
   position: relative;
-  height: 112px;
   z-index: 100;
 }
 
@@ -6365,11 +6355,12 @@ header {
 .navigation nav .sub-menu {
   position: absolute;
   top: 40px;
-  left: -15px;
+  left: -24px;
   display: none;
   width: 300px;
   z-index: 10000;
 }
+
 
 .navigation nav a {
   float: none;
@@ -6396,14 +6387,12 @@ header {
 .navigation nav ul li.menu-item-has-children:hover .sub-menu {
   display: block;
 }
-
-.navigation {
-  float: none;
-  min-height: initial;
-}
-
 .swiper-container {
   position: relative;
+}
+.widget_wpglobus.widget {
+  margin: 0;
+  margin-left: 20px;
 }
 
 .our-offers-block {
@@ -6535,6 +6524,11 @@ header {
   h3 {
     margin-bottom: 30px;
   }
+  h4 {
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
   p {
     margin-bottom: 20px;
   }
@@ -6542,6 +6536,19 @@ header {
   a {
     text-decoration: underline;
     color: $st_tropaz;
+  }
+  ul {
+    margin-bottom: 30px;
+    float: none;
+    li {
+      padding: 10px 30px;
+      background: linear-gradient(to left, #d1e2fd 0%, white, #d1e2fd);
+      border-bottom: 1px solid #c1c1c1;
+      color: #506a6b;
+      font-size: 20px;
+      box-shadow: 0 5px 5px 0 rgba(0,0,0, .1);
+      margin-bottom: 5px;
+    }
   }
 }
 
