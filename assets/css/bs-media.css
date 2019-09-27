@@ -74,6 +74,14 @@
 	.offers__content {
 		padding: 10px 0;
 	}
+	.cities-page {
+		display: block;
+		margin: 0 auto;
+		max-width: 600px;
+	}
+	.cities__item {
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -100,6 +108,16 @@
 		font-size: 35px;
 	}
 }
+@media screen and (max-width: 600px) {
+	.cities-page {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.cities__title a {
+		font-size: 28px;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	.main-baner h1 {
 		font-size: 24px;

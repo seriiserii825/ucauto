@@ -49,7 +49,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="category-wraper">
-                    <h4><?php echo carbon_get_theme_option( 'crb_categories_title' . get_lang() ); ?></h4>
+                    <h4 class="category__title"><?php echo carbon_get_theme_option( 'crb_categories_title' . get_lang() ); ?></h4>
+                    <p class="category__text"><?php echo carbon_get_theme_option( 'crb_categories_text' . get_lang() ); ?></p>
                     <div class="swiper-container category-baner">
                         <div class="swiper-wrapper">
 							<?php $category = carbon_get_theme_option( 'crb_categories_slider' ); ?>
@@ -61,8 +62,8 @@
                                         <img src="<?php echo $item['crb_img_real']; ?>"
                                              alt="car">
                                         <h4><?php echo $item[ 'crb_title' . get_lang() ]; ?></h4>
-                                        <h5 class="slide_cat_t"><?php echo $item[ 'crb_cat_name' . get_lang() ]; ?></h5>
-                                        <p class="slide_cat_t_text"><?php echo $item[ 'crb_cat_description' . get_lang() ]; ?></p>
+<!--                                        <h5 class="slide_cat_t">--><?php //echo $item[ 'crb_cat_name' . get_lang() ]; ?><!--</h5>-->
+<!--                                        <p class="slide_cat_t_text">--><?php //echo $item[ 'crb_cat_description' . get_lang() ]; ?><!--</p>-->
                                         <h5 class="slide_subcat"><?php echo $item[ 'crb_sub_cat_name' . get_lang() ]; ?></h5>
                                         <p class="slide_subcat_text"><?php echo $item[ 'crb_sub_cat_description' . get_lang() ]; ?></p>
                                     </div>
@@ -74,7 +75,7 @@
                     <div class="slide-prev"><span class="fa fa-chevron-left"></span></div>
                     <div class="category-desc">
                         <div class="image-desc">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/moped.png" alt="car"
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/moped-small.jpg" alt="car"
                                  class="avto">
                         </div>
                         <div class="text-desc">

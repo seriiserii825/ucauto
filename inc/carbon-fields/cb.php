@@ -96,6 +96,14 @@ function crb_attach_theme_options() {
 		              ->set_width( 30 ),
 		         Field::make( 'text', 'crb_categories_title_en', __( 'crb_categories_title_en' ) )
 		              ->set_width( 30 ),
+		
+		         Field::make( 'text', 'crb_categories_text_ro', __( 'crb_categories_text_ro' ) )
+		              ->set_width( 30 ),
+		         Field::make( 'text', 'crb_categories_text_ru', __( 'crb_categories_text_ru' ) )
+		              ->set_width( 30 ),
+		         Field::make( 'text', 'crb_categories_text_en', __( 'crb_categories_text_en' ) )
+		              ->set_width( 30 ),
+		         
 		         Field::make( 'complex', 'crb_categories_slider', __( 'Categories slider' ) )
 		              ->add_fields( array(
 			              Field::make( 'text', 'crb_cat_name_ro', __( 'crb_cat_name_ro' ) )

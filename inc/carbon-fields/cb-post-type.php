@@ -15,3 +15,14 @@ function crb_term_options()
 	 ));
 }
 
+
+add_action('carbon_fields_register_fields', 'crb_city_options');
+function crb_city_options()
+{
+	Container::make('post_meta', __('city'))
+	         ->where( 'post_type', '=', 'slider' )
+	         ->add_fields(array(
+		         Field::make( 'media_gallery', 'crb_media_gallery', __( 'Media Gallery' ) )
+		              ->set_duplicates_allowed( false )
+	         ));
+}
