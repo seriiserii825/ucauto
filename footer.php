@@ -91,7 +91,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright">
-                        <span>Copyright 2015 &copy; Driver | All Rights Reserved</span>
+                        <span>Copyright 2019 &copy; UCAUTO</span>
                         <div class="footer-follow">
                             <a href="" class="fa fa-facebook"></a>
                             <a href="" class="fa fa-twitter"></a>

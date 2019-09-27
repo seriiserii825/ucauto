@@ -1315,7 +1315,7 @@ form {
   color: #fff;
   text-shadow: 0px 4px rgba(20, 64, 139, 0.6);
   padding-bottom: 5px;
-  font-size: 26px;
+  font-size: 19px;
 }
 
 .our-offers-block p {
@@ -6283,7 +6283,6 @@ header {
 .join-us__content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
@@ -6344,7 +6343,6 @@ header {
 .offers__content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
@@ -6381,7 +6379,7 @@ header {
 }
 
 .single-content h4 {
-  font-size: 26px;
+  font-size: 18px;
   font-weight: normal;
   margin-bottom: 30px;
 }
@@ -6423,7 +6421,6 @@ header {
 .media-gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
   grid-template-columns: repeat(6, 1fr);
   margin-top: 30px;
   grid-gap: 10px;
@@ -6431,28 +6428,24 @@ header {
 
 @media screen and (max-width: 1200px) {
   .media-gallery {
-    -ms-grid-columns: (1fr)[5];
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media screen and (max-width: 962px) {
   .media-gallery {
-    -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (max-width: 678px) {
   .media-gallery {
-    -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 500px) {
   .media-gallery {
-    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -6467,6 +6460,7 @@ header {
 
 .media-gallery__item {
   position: relative;
+  height: 140px;
   border: 1px solid #ccc;
   overflow: hidden;
 }
@@ -6474,6 +6468,7 @@ header {
 @media screen and (max-width: 430px) {
   .media-gallery__item {
     margin-bottom: 20px;
+		height: auto;
   }
 }
 
@@ -6530,7 +6525,6 @@ header {
 .main-table__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   margin-bottom: 15px;
@@ -6588,14 +6582,12 @@ table th:first-child, table td:first-child {
 .gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 
 @media screen and (max-width: 1200px) {
   .gallery {
-    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -6652,7 +6644,6 @@ table th:first-child, table td:first-child {
 .thumb-wrap {
   position: relative;
   padding-bottom: 56.25%;
-  /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
   padding-top: 30px;
   height: 0;
   overflow: hidden;
@@ -6669,14 +6660,12 @@ table th:first-child, table td:first-child {
 .single-content.video__gallery p {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 
 @media screen and (max-width: 768px) {
   .single-content.video__gallery p {
-    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -6693,4 +6682,3 @@ table th:first-child, table td:first-child {
   }
 }
 
-/*# sourceMappingURL=my.css.map */
