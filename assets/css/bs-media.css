@@ -82,6 +82,9 @@
 	.cities__item {
 		margin-bottom: 30px;
 	}
+	.category-desc {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 768px) {

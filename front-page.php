@@ -79,10 +79,8 @@
                                  class="avto">
                         </div>
                         <div class="text-desc">
-                            <h5 class="cat_t"></h5>
-                            <p class="cat_t_text"></p>
-                            <h5 class="subcat"></h5>
-                            <p class="subcat_text"></p>
+                            <h5 class="subcat"><?php echo $category[0][ 'crb_sub_cat_name' . get_lang() ]; ?></h5>
+                            <p class="subcat_text"><?php echo $category[0][ 'crb_sub_cat_description' . get_lang() ]; ?></p>
                         </div>
                     </div>
                 </div>

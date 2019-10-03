@@ -1469,7 +1469,8 @@ form {
 
 .category-desc {
   position: relative;
-  float: left;
+  display: grid;
+  grid-template-columns: 400px 1fr;
   padding: 30px 30px 25px;
   text-align: left;
   color: #2d5ba9;
@@ -1535,7 +1536,6 @@ form {
 
 .image-desc {
   position: relative;
-  float: left;
   padding: 50px 50px 50px 0px;
 }
 
