@@ -983,8 +983,8 @@ object {
 .gallery-caption {
 	display: block;
 }
-.some-block {
-	padding: 0;
+.my-block {
+	background-color: red;
 }
 h4 {
 	color: white;
