@@ -984,7 +984,7 @@ object {
 	display: block;
 }
 h1 {
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 .my-block {
 	background-color: red;
