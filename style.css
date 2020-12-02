@@ -983,6 +983,9 @@ object {
 .gallery-caption {
 	display: block;
 }
+h1 {
+	text-transform: uppercase;
+}
 .my-block {
 	background-color: red;
 }
