@@ -992,3 +992,6 @@ h1 {
 h2 {
 	color: white;
 }
+ul {
+	list-style-type: disc;
+}
